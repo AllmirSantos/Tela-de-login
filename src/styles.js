@@ -1,4 +1,31 @@
-import styled, { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
+
+export const BtnLogin = styled.div`
+  button:hover {
+    background-color: #023c35;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  button {
+    background-color: #ffad1b;
+    width: 130px;
+    height: 40px;
+    box-shadow: 0px 0px 4px #939393;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: none;
+    border-radius: 30px;
+
+    color: #023c35;
+    text {
+      font-size: 15px;
+      font-weight: bold;
+    }
+  }
+`;
 export const BoxAll = styled.body`
   margin: 0px;
   padding: 0px;
@@ -8,7 +35,7 @@ export const BoxAll = styled.body`
   width: 100%;
   height: 100%;
   position: fixed;
-  background-color: #3b4b7f;
+  background-color: #1a2036;
   text {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -16,7 +43,7 @@ export const BoxAll = styled.body`
 `;
 export const BoxCenter = styled.section`
   width: 600px;
-  height: 350px;
+  height: 380px;
   border-radius: 20px;
   margin: 0px;
   display: flex;
@@ -35,13 +62,17 @@ export const BoxCenter = styled.section`
     flex: 1;
     position: relative;
     display: flex;
-    background-color: #5b8ffd;
+    background-color: #12c8af;
     height: 100%;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
     border-radius: 20px 0px 40px 20px;
-    img {
+    #imgLogo {
+      margin-top: 10px;
+      width: 140px;
+    }
+    #imgMed {
       width: 250px;
       border-radius: 100%;
     }
@@ -63,7 +94,7 @@ export const BoxCenter = styled.section`
   sectionTwo {
     flex: 1;
     display: flex;
-    background-color: #5b8ffd;
+    background-color: #12c8af;
     height: 100%;
     border-radius: 0px 20px 20px 0px;
   }
@@ -78,20 +109,40 @@ export const BoxCenter = styled.section`
     flex-direction: column;
     section {
       display: flex;
-      width: 70%;
+      width: 80%;
       padding: 10px 10px 10px 10px;
       justify-content: center;
       flex-direction: column;
     }
-    #titeLogin {
+    #titleLogin {
       font-weight: bold;
-      font-size: 18px;
+      font-size: 20px;
+    }
+    #titleInforLogin {
+      color: gray;
+      font-size: 12px;
     }
   }
 `;
-
-export const btnlogin = styled.div`
-  background-color: red;
-  width: 130px;
-  height: 40px;
+export const BoxAcessInputs = styled.div`
+  margin-bottom: 4px;
+  text {
+    font-size: 14px;
+  }
+  input {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 5px;
+    outline: none;
+  }
+  input:focus-visible {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border: 2px solid #12c8af;
+  }
 `;

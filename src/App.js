@@ -1,6 +1,6 @@
 import React, { Componet } from "react";
 
-import { BoxCenter, BoxAll, btnLogin } from "./styles";
+import { BoxCenter, BoxAll, BoxAcessInputs, BtnLogin } from "./styles";
 
 function App() {
   return (
@@ -8,8 +8,15 @@ function App() {
       <BoxCenter>
         <sectionOne>
           <sectionOneRadius>
-            <text id="title">Hospital</text>
-            <img src="https://assim.com.br/site/img/contratar-plano-de-saude.png"></img>
+            <img
+              id="imgLogo"
+              src="https://gurumed.com.br/wp-content/uploads//2020/12/gurumed-branca-novo.svg"
+            ></img>
+
+            <img
+              id="imgMed"
+              src="https://assim.com.br/site/img/contratar-plano-de-saude.png"
+            ></img>
 
             <text id="copyright">
               copyright © 2020 todos os direitos reservados
@@ -19,21 +26,30 @@ function App() {
         <sectionTwo>
           <sectionTwoRadius>
             <section>
-              <text id="titeLogin"> Bem vindo ao Gurumed</text>
-              <text id="titeInforLogin"> Registre sua conta</text>
+              <text id="titleLogin"> Bem vindo ao Gurumed</text>
+              <text id="titleInforLogin"> Registre sua conta</text>
             </section>
             <section>
-              <text className="TextInput"> Nome </text>
-              <input placeholder="João" />
-              <text className="TextInput"> Email </text>
-              <input placeholder="joaodemaria@gmail.com" />
-              <text className="TextInput"> Nome </text>
-              <input placeholder="senha" type="password" />
+              <BoxAcessInputs>
+                <text className="TextInput"> Nome </text>
+                <input placeholder="João" />
+              </BoxAcessInputs>
+
+              <BoxAcessInputs>
+                <text className="TextInput"> Email </text>
+                <input placeholder="joaodemaria@gmail.com" />
+              </BoxAcessInputs>
+              <BoxAcessInputs>
+                <text className="TextInput"> Senha </text>
+                <input placeholder="senha" type="password" />
+              </BoxAcessInputs>
             </section>
             <section>
-              <btnLogin>
-                <text>Cadastrar</text>
-              </btnLogin>
+              <BtnLogin>
+                <button>
+                  <text>Cadastrar</text>
+                </button>
+              </BtnLogin>
             </section>
           </sectionTwoRadius>
         </sectionTwo>
